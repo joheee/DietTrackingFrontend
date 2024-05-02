@@ -28,8 +28,8 @@ export default function NavigationComponent() {
       onClick: () => navigate("/bmi"),
     },
     {
-      title: "Blogs",
-      onClick: () => navigate("/blogs"),
+      title: "Profile",
+      onClick: () => navigate("/profile"),
     },
   ];
 
@@ -41,7 +41,7 @@ export default function NavigationComponent() {
 
   useEffect(() => {
     setNavItems(navItemsUser);
-    setNavItems(navItemsGuest);
+    // setNavItems(navItemsGuest);
   }, []);
 
   // FUNCTION
@@ -60,7 +60,7 @@ export default function NavigationComponent() {
     mobileOpen,
     navItems,
     handleDrawerToggle,
-    handleLandingPage
+    handleLandingPage,
   };
 
   return <NavigationPresenter prop={prop} />;
