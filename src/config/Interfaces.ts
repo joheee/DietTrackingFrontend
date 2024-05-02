@@ -20,3 +20,11 @@ export interface NavigationElement {
 export interface NavigationPresenterInterface {
   prop: NavigationElement;
 }
+
+export interface BmiPagePresenterElement {
+  handleBmiModal:() => void,
+  bmiModal:Boolean
+}
+export interface BmiPagePresenterInterface {
+  prop:BmiPagePresenterElement
+}

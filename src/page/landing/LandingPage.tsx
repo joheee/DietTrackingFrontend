@@ -11,7 +11,6 @@ export default function LandingPage() {
     navigate("/bmi");
   }
 
-  // PROP
   const prop: LandingPagePresenterElement = {
     handleBmi: handleBmi,
   };

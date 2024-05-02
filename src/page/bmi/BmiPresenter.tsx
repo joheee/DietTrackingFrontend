@@ -11,8 +11,10 @@ import {
   TextField,
 } from "@mui/material";
 import NavigationComponent from "../../components/navigation/NavigationComponent";
+import BmiModal from "./modals/BmiModal";
+import { BmiPagePresenterInterface } from "../../config/Interfaces";
 
-export default function BmiPresenter() {
+export default function BmiPresenter({ prop }: BmiPagePresenterInterface) {
   return (
     <Grid
       container
@@ -21,6 +23,7 @@ export default function BmiPresenter() {
       justifyContent="center"
       sx={{ minHeight: "100vh", minWidth: "100vw" }}
     >
+      {prop.bmiModal ? null : <BmiModal prop={prop} />}
       <NavigationComponent />
       <Card variant="outlined">
         <Stack spacing={5} paddingY={4} paddingX={2}>

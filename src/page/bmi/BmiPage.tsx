@@ -1,5 +1,21 @@
+import { useState } from "react";
 import BmiPresenter from "./BmiPresenter";
+import { BmiPagePresenterElement } from "../../config/Interfaces";
 
 export default function BmiPage() {
-    return <BmiPresenter/>
+  // STATE
+  const [bmiModal, setBmiModal] = useState<Boolean>(false);
+
+  // FUNCTION
+  function handleBmiModal() {
+    setBmiModal(!bmiModal);
+  }
+
+  // PROP
+  const prop: BmiPagePresenterElement = {
+    handleBmiModal: handleBmiModal,
+    bmiModal
+  };
+
+  return <BmiPresenter prop={prop}/>;
 }
