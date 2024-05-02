@@ -1,6 +1,7 @@
 import { Button, Grid, Stack, Typography } from "@mui/material";
-import LandingCard from "../../components/LandingCard";
+import LandingCard from "../../components/landing/LandingCard";
 import { LandingPagePresenterInterface } from "../../config/Interfaces";
+import NavigationComponent from "../../components/navigation/NavigationComponent";
 
 export default function LandingPresenter({
   prop,
@@ -14,6 +15,7 @@ export default function LandingPresenter({
         minHeight: "100vh",
       }}
     >
+      <NavigationComponent />
       <Stack direction="row" justifyContent="center" alignItems="center">
         <Grid maxWidth="33rem">
           <Typography style={{ fontWeight: "bold", fontSize: "50px" }}>
@@ -28,7 +30,7 @@ export default function LandingPresenter({
             variant="contained"
             style={{ minWidth: "100%" }}
           >
-            sign in
+            start now
           </Button>
         </Grid>
         <img src="/home/home-food.png" alt="" />
