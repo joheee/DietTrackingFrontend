@@ -26,7 +26,7 @@ export default function LandingPresenter({
             Tracking
           </Typography>
           <Button
-            onClick={prop.handleSignIn}
+            onClick={prop.handleBmi}
             variant="contained"
             style={{ minWidth: "100%" }}
           >

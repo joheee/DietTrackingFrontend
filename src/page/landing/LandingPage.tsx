@@ -7,13 +7,13 @@ export default function LandingPage() {
   const navigate = useNavigate();
 
   // FUNCTION
-  function handleSignIn() {
-    navigate("/login");
+  function handleBmi() {
+    navigate("/bmi");
   }
 
   // PROP
   const prop: LandingPagePresenterElement = {
-    handleSignIn: handleSignIn,
+    handleBmi: handleBmi,
   };
 
   return <LandingPresenter prop={prop} />;

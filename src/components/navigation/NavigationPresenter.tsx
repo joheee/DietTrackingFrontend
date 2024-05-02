@@ -19,7 +19,11 @@ export default function NavigationPresenter({
 }: NavigationPresenterInterface) {
   const drawer = (
     <Box onClick={prop.handleDrawerToggle} sx={{ textAlign: "center" }}>
-      <Typography variant="h6" sx={{ my: 2 }}>
+      <Typography
+        onClick={prop.handleLandingPage}
+        variant="h6"
+        sx={{ my: 2, cursor: "pointer" }}
+      >
         {prop.navTitle}
       </Typography>
       <Divider />
@@ -52,7 +56,12 @@ export default function NavigationPresenter({
           <Typography
             variant="h6"
             component="div"
-            sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}
+            sx={{
+              flexGrow: 1,
+              cursor: "pointer",
+              display: { xs: "none", sm: "block" },
+            }}
+            onClick={prop.handleLandingPage}
           >
             {prop.navTitle}
           </Typography>
