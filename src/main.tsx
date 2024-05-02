@@ -7,6 +7,7 @@ import RegisterPage from "./page/register/RegisterPage.tsx";
 import LandingPage from "./page/landing/LandingPage.tsx";
 import BmiPage from "./page/bmi/BmiPage.tsx";
 import ProfilePage from "./page/profile/ProfilePage.tsx";
+import FoodPage from "./page/food/FoodPage.tsx";
 
 const router = createBrowserRouter([
   {
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
   {
     path: "/profile",
     element: <ProfilePage />,
+  },
+  {
+    path: "/foods",
+    element: <FoodPage />,
   },
 ]);
 

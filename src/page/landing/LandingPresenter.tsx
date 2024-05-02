@@ -1,5 +1,5 @@
 import { Button, Grid, Stack, Typography } from "@mui/material";
-import LandingCard from "../../components/landing/LandingCard";
+import LandingCard from "../food/components/LandingCard";
 import { LandingPagePresenterInterface } from "../../config/Interfaces";
 import NavigationComponent from "../../components/navigation/NavigationComponent";
 
