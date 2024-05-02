@@ -1,7 +1,10 @@
 import { Button, Grid, Stack, Typography } from "@mui/material";
 import LandingCard from "../../components/LandingCard";
+import { LandingPagePresenterInterface } from "../../config/Interfaces";
 
-export default function LandingPresenter() {
+export default function LandingPresenter({
+  prop,
+}: LandingPagePresenterInterface) {
   return (
     <Stack
       spacing={15}
@@ -20,7 +23,11 @@ export default function LandingPresenter() {
             Want to diet? lets write meal and reach your target with Diet
             Tracking
           </Typography>
-          <Button variant="contained" style={{ minWidth: "100%" }}>
+          <Button
+            onClick={prop.handleSignIn}
+            variant="contained"
+            style={{ minWidth: "100%" }}
+          >
             sign in
           </Button>
         </Grid>
