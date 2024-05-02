@@ -7,7 +7,6 @@ export default function FoodPresenter() {
     <Grid
       container
       spacing={0}
-      alignItems="center"
       justifyContent="center"
       sx={{ minHeight: "100vh", minWidth: "100vw" }}
     >

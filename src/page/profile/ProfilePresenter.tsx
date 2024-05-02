@@ -1,11 +1,4 @@
-import {
-  Avatar,
-  Button,
-  Card,
-  Grid,
-  Stack,
-  TextField,
-} from "@mui/material";
+import { Avatar, Button, Card, Grid, Stack, TextField } from "@mui/material";
 import NavigationComponent from "../../components/navigation/NavigationComponent";
 
 export default function ProfilePresenter() {
@@ -13,7 +6,6 @@ export default function ProfilePresenter() {
     <Grid
       container
       spacing={0}
-      alignItems="center"
       justifyContent="center"
       sx={{ minHeight: "100vh", minWidth: "100vw" }}
     >

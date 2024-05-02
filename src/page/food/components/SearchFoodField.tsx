@@ -50,7 +50,7 @@ export default function SearchFoodField() {
         <SearchIcon />
       </SearchIconWrapper>
       <StyledInputBase
-        placeholder="Search…"
+        placeholder="Search foods..."
         inputProps={{ "aria-label": "search" }}
       />
     </Search>
