@@ -28,8 +28,7 @@ function createData(name: string, calories: number) {
 
 const rows = [createData("Frozen yoghurt", 159)];
 
-export default function BasicModal({prop}:BmiPagePresenterInterface) {
-
+export default function BasicModal({ prop }: BmiPagePresenterInterface) {
   return (
     <div>
       <Modal
@@ -68,7 +67,11 @@ export default function BasicModal({prop}:BmiPagePresenterInterface) {
               </Table>
             </TableContainer>
 
-            <Button onClick={prop.handleBmiModal} variant="contained" sx={{ minWidth: "100%" }}>
+            <Button
+              onClick={prop.handleBmiModal}
+              variant="contained"
+              sx={{ minWidth: "100%" }}
+            >
               close
             </Button>
           </Stack>

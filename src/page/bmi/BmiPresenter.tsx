@@ -23,7 +23,7 @@ export default function BmiPresenter({ prop }: BmiPagePresenterInterface) {
       justifyContent="center"
       sx={{ minHeight: "100vh", minWidth: "100vw" }}
     >
-      {prop.bmiModal ? null : <BmiModal prop={prop} />}
+      {!prop.bmiModal ? null : <BmiModal prop={prop} />}
       <NavigationComponent />
       <Card variant="outlined">
         <Stack spacing={5} paddingY={4} paddingX={2}>
