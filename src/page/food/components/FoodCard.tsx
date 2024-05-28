@@ -19,7 +19,7 @@ export default function FoodCard({ prop }: FoodCardInterface) {
       >
         <CardMedia
           component="img"
-          height="300"
+          height="345"
           image={prop.src}
           alt={prop.title}
         />
