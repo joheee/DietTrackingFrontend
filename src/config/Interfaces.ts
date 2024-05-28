@@ -15,16 +15,25 @@ export interface NavigationElement {
   mobileOpen: boolean;
   navItems: NavigationItemInterface[];
   handleDrawerToggle: () => void;
-  handleLandingPage:() => void
+  handleLandingPage: () => void;
 }
 export interface NavigationPresenterInterface {
   prop: NavigationElement;
 }
 
 export interface BmiPagePresenterElement {
-  handleBmiModal:() => void,
-  bmiModal:Boolean
+  handleBmiModal: () => void;
+  bmiModal: boolean;
 }
 export interface BmiPagePresenterInterface {
-  prop:BmiPagePresenterElement
+  prop: BmiPagePresenterElement;
+}
+
+export interface FoodCardElement {
+  src: string;
+  title: string;
+  description: string;
+}
+export interface FoodCardInterface {
+  prop: FoodCardElement;
 }
